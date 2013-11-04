@@ -10,13 +10,13 @@ You will need to install some wonderful 3rd-party python modules:
 
 ## Usage
 
-For the moment just setup the variables in main and run:
+For the moment just setup the variables in main() and run:
 
 	python UnwrappedIdentityLUTBuilder.py
 
 ## The Future
 
-1. At the moment it only creates identity luts. Maybe it should accept Resolve .cube files and generated a corrected LUT?
+1. At the moment it only creates identity LUTs. Maybe it should accept Resolve .cube files and generated a corrected LUT?
 
 
 ## Contributing
