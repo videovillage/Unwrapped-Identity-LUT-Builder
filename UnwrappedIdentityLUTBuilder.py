@@ -23,7 +23,7 @@ def MakeUnwrappedIdentityLUTAtBitdepth(cubeSize, bitdepth):
 
 #def returns x,y rgb data scaled 0 to 1
 def MakeUnwrappedIdentityLUT(cubeSize):
-	data = NumpyArrayOfSize(cubeSize*cubeSize, cubeSize)
+	data = NumpyImageArrayOfSize(cubeSize*cubeSize, cubeSize)
 	for y in xrange(data.shape[0]):
 		for x in xrange(data.shape[1]):
 			redIndex = (x%cubeSize)
@@ -36,6 +36,14 @@ def MakeUnwrappedIdentityLUT(cubeSize):
 
 	return data
 
+def MakeIndentityLUT(cubeSize):
+	identity = numpy.zeros((cubeSize, cubeSize, cubeSize), float)
+	for x in xrange(identity.shape[0]):
+		for y in xrange(identity.shape[1]):
+			for z in xrange(identity.shape[2]:
+				identity[x, y, z] = RemapTo01(x, cubeSize), RemapTo01(y, cubeSize), RemapTo01(z, cubeSize)
+	return identity
+
 def RemapTo01(val, cubeSize):
 	return (float(val)/float(cubeSize-1))
 
@@ -43,7 +51,7 @@ def RemapToInt(val, bits):
 	return int(val*bits)
 			
 #bitdepth: np.uint8, np.float32
-def NumpyArrayOfSize(width, height):
+def NumpyImageArrayOfSize(width, height):
 	return numpy.zeros( (height, width, 3), float)
 
 def PrintNumpyArray(data):
