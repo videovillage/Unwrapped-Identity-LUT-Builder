@@ -6,7 +6,7 @@ Builds uncorrected, unwrapped identity LUTs for Unity3D and UDK
 
 You will need to install some wonderful 3rd-party python modules:
 
-	pip install PIL numpy
+	sudo pip install PIL numpy
 
 ## Usage
 
