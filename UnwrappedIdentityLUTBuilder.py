@@ -66,7 +66,6 @@ def main():
 	#copy numpy array into PIL image
 	img = Image.fromarray(data)
 
-	print destinationFolder
 	#save image
 	img.save(destinationFolder + filename, fileType)
 
