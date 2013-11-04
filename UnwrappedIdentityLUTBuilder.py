@@ -8,10 +8,10 @@ import os
 def Rescale0to1NumpyArrayToBitdepth(data, bitdepth):
 	if(bitdepth == numpy.uint8):
 		return (data * (2**8-1)).astype(numpy.uint8)
-	elif(bitdepth == numpy.uint16):
-		return (data * (2**16-1)).astype(numpy.uint16)
-	elif(bitdepth == numpy.uint32):
-	 	return (data * (2**32-1)).astype(numpy.uint32)
+	# elif(bitdepth == numpy.uint16):
+	# 	return (data * (2**16-1)).astype(numpy.uint16)
+	# elif(bitdepth == numpy.uint32):
+	#  	return (data * (2**32-1)).astype(numpy.uint32)
 	# elif(bitdepth == numpy.float16):
 	# 	return data.astype(numpy.float16)
 	# elif(bitdepth == numpy.float32):
