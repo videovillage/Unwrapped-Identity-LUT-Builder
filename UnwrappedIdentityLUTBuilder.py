@@ -63,7 +63,7 @@ def PrintNumpyArray(data):
 def main():
 	#parameters
 	cubeSize = 16
-	bitdepth = numpy.uint8 #uint8 only supported at the moment
+	bitdepth = numpy.uint8 #uint8 only supported at the moment due to PIL being terrible
 	fileType = "tiff"
 	destinationFolder = os.path.dirname(os.path.abspath(__file__))+"/" #os.path.expanduser("~")+"/Desktop/"
 	filename = "identityLUT_"+str(cubeSize)+"x"+str(cubeSize)+"."+fileType
