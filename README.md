@@ -16,7 +16,7 @@ For the moment just setup the variables in main() and run:
 
 ## The Future
 
-1. At the moment it only creates identity LUTs. Maybe it should accept Resolve .cube files and generated a corrected LUT?
+1. At the moment it only creates identity LUTs. Maybe it should accept Resolve .cube files and generate a corrected LUT?
 
 
 ## Contributing
